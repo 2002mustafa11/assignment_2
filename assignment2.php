@@ -112,6 +112,7 @@ echo'<hr><br>';
 
 
 function calculate($num1,$num2,$operation){
+ if(is_int($num1) && is_int($num2)){
 if ($operation == '+') {
     $result = $num1 + $num2;
 } elseif ($operation == '-') {
@@ -135,6 +136,7 @@ $result = $num1 % $num2;
 if ($result != null) {
     echo "<p>Result: $result</p>";
 }
+ }
 } 
 calculate(5,2,'**');
 

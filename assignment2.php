@@ -89,9 +89,13 @@ if ($operation == '+') {
 } elseif ($operation == '/') {
     if ($num2 == 0) {
         echo "Error: zero";
-    } else {
+    }else{
         $result = $num1 / $num2;
     }
+} elseif ($operation == '**') {
+        $result = $num1 ** $num2;
+}elseif ($operation == '%') {
+    $result = $num1 % $num2;
 }
 if ($result != null) {
     echo "<p>Result: $result</p>";

@@ -130,10 +130,14 @@ elseif ($operation == '**') {
     $result = $num1 ** $num2;
 }
 elseif ($operation == '%') {
-$result = $num1 % $num2;
+if ($num2 == 0) {
+        echo "Error: zero";
+    } else {
+        $result = $num1 % $num2;
+    }
 }
 
-if ($result != null) {
+if (isset($result)) {
     echo "<p>Result: $result</p>";
 }
  }
